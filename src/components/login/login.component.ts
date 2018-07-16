@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
 
   signIn() {
-    this.router.navigate(['/layout']);
+    this.router.navigate(['/layout', { outlets: { 'content': ['dashboard'] } }]);
 
   }
 }
