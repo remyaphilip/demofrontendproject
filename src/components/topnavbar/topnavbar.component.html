@@ -1,0 +1,26 @@
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-warning border-0 ">
+    <a class="navbar-brand" href="#">
+      <img src="assets/map.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Company name
+    </a>
+    <div class="btn-group p-0 m-0">
+        <button type="button" class="btn bg-transparent pr-0">
+          <img src="assets/user.svg" width="25" height="25">
+        </button>
+        <button type="button" class="btn bg-transparent dropdown-toggle dropdown-toggle-split pl-1 pt-2" id="dropdownMenuReference"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu  dropdown-menu-right " aria-labelledby="dropdownMenuReference">
+          <a class="dropdown-item">Signedin as</a>
+          <a class="dropdown-item">test@email.com</a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-link text-dark " [routerLink]="['/layout', { outlets: {'content':['myprofile']}}]">Edit Profile</a>
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/login" routerLinkActive="active">Signout</a>
+        </div>
+      </div>
+
+  </nav>

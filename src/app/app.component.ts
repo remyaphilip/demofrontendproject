@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import fontawesome from '@fortawesome/fontawesome';
+import faTrashAlt from '@fortawesome/fontawesome-free-regular/';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(){
+    fontawesome.library.add(faTrashAlt);
+  }
   title = 'app';
 }

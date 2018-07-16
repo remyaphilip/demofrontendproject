@@ -1,0 +1,14 @@
+<div class="collapse navbar-collapse flex-column show bg-light mb-2 h-100 " id="nav-content">
+  <ul class="nav nav-pills flex-column h-100">
+    <li class="nav-item">
+      <a class="nav-link text-dark" [routerLink]="['/layout', { outlets: {'content':['dashboard']}}]">Dashboard</a>
+    </li>
+    <li class="nav-item  ">
+      <a class="nav-link text-dark " [routerLink]="['/layout', { outlets: {'content':['users']}}]">Users</a>
+
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark " [routerLink]="['/layout', { outlets: {'content':['myprofile']}}]">My Profile</a>
+      </li>
+  </ul>
+</div>
