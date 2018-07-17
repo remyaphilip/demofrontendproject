@@ -1,5 +1,6 @@
-.nav.nav-item{
-li:focus{
-    border-left-color: red;
-}
+
+.list-item-active{
+    border-left: #2FAA5C solid 5px;
+    border-radius: 0px;
+    background-color: rgba( #000000,  0.0);
 }
